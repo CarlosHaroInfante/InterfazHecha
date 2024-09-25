@@ -1,0 +1,207 @@
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: black;
+  background-color: #f1d2c4;
+}
+
+.main-header {
+  background-color: rgb(0, 0, 0);
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Cambia a space-between */
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.main-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: right;
+  margin: 0 auto; /* Agrega esto para centrar el menú */
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav ul li a {
+  color: #f1d2c4;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cta {
+  margin-left: 20px;
+}
+
+.cta .cta-button {
+  background-color: #f8ede0;
+  color: #ee4055;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta .cta-button:hover {
+  background-color: #f1d2c4;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .main-nav {
+    margin-top: 10px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+/* TARJETAS */
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center; /* Asegúrate de que esté centrado */
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  width: 250px;
+  height: auto;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.texto {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.boton {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.imagen-tarjeta {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.tarjeta {
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*Formularios*/
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-formulario {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.campo-formulario input, .campo-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.boton-enviar {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #3e8e41;
+}
